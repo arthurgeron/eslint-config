@@ -19,7 +19,6 @@ module.exports = {
     "plugin:radar/recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:import/recommended",
   ],
   plugins: [
     "eslint-plugin-no-inline-styles",
@@ -56,6 +55,7 @@ module.exports = {
   overrides: [
     {
       files: ["*js"],
+      extends: ["plugin:import/recommended"],
       rules: {
         "implicit-arrow-linebreak": "off",
         "object-curly-newline": ["error", {
