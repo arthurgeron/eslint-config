@@ -13,7 +13,6 @@
     "@typescript-eslint/eslint-plugin": "4.27.0",
     "@typescript-eslint/parser": "4.27.0",
     "eslint": "7.28.0",
-    "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-typescript": "2.4.0",
     "eslint-plugin-import": "2.23.4",
     "eslint-plugin-import-helpers": "1.1.0",
@@ -31,12 +30,10 @@
     "url": "https://github.com/arthurgeron/eslint-config.git"
   },
   "peerDependencies": {
-    "eslint": "7.x",
-    "react": "16.x",
-    "eslint-config-prettier": "8.x",
     "@react-native-community/eslint-config": "3.x",
     "@typescript-eslint/eslint-plugin": "4.x",
     "@typescript-eslint/parser": "4.x",
+    "eslint": "7.x",
     "eslint-import-resolver-typescript": "2.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-import-helpers": "1.x",
@@ -44,6 +41,7 @@
     "eslint-plugin-prettier": "3.x",
     "eslint-plugin-radar": "0.x",
     "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "4.x"
+    "eslint-plugin-react-hooks": "4.x",
+    "react": "16.x"
   }
 }
