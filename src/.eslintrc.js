@@ -98,9 +98,9 @@ module.exports = {
           {
             "newlinesBetween": "always",
             "groups": [
-              ["/react$/", "/^next/"],
+              ["/react$/", "/^next/", "/^\@tradersclub/"],
               "module",
-              "/^@(global-(layouts|components|constants|contexts|utils|hooks|store)|services|config|themes|home)/",
+              "/^@(hooks/constants/types/components)/",
               ["parent", "sibling"],
               "index"
             ],
