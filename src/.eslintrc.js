@@ -51,7 +51,6 @@ module.exports = {
     "no-tabs": ["error", {"allowIndentationTabs": true}],
     "no-shadow": "off",
     "no-console": ["error", { allow: ["warn", "error"] }],
-    "comma-dangle": "off",
   },
   overrides: [
     {
