@@ -1,3 +1,4 @@
+const namingConventionConfig = require('./rules/namingConvention');
 
 module.exports = {
   root: true,
@@ -74,6 +75,7 @@ module.exports = {
       rules: {
         "implicit-arrow-linebreak": "off",
         camelcase: "off",
+        '@typescript-eslint/naming-convention': namingConventionConfig,
         "@typescript-eslint/no-explicit-any": "error",
         "indent": "off",
         "@typescript-eslint/indent": "off",
