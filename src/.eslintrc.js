@@ -1,3 +1,4 @@
+
 module.exports = {
   root: true,
   env: {
@@ -36,8 +37,10 @@ module.exports = {
     },
   },
   rules: {
+    "comma-dangle": "off",
+    "object-curly-newline": "off",
     "react/react-in-jsx-scope": "off",
-    "camelcase": [2, { "ignoreDestructuring": false, "allow": ["^must_"]  }],
+    "camelcase": [2, { "properties": "never", "ignoreDestructuring": false, "allow": ["^must_","^firebase_"]  }],
     "no-undef": "warn",
     "react/no-multi-comp": "error",
     "radar/no-duplicate-string": "off",
@@ -58,14 +61,10 @@ module.exports = {
       extends: ["plugin:import/recommended"],
       rules: {
         "implicit-arrow-linebreak": "off",
-        "object-curly-newline": ["error", {
-          "ObjectExpression": "always",
-          "ObjectPattern": { "multiline": true },
-          "ImportDeclaration": "never",
-          "ExportDeclaration": { "multiline": true, "minProperties": 3 }
-        }],
         "jsx-props-no-spreading": "off",
-        "no-shadow": ["error"]
+        "no-shadow": ["error"],
+        "import/named": "off",
+        "import/no-unresolved": "off",
       }
     },
     {
@@ -74,6 +73,7 @@ module.exports = {
       extends: ["plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
       rules: {
         "implicit-arrow-linebreak": "off",
+        camelcase: "off",
         "@typescript-eslint/no-explicit-any": "error",
         "indent": "off",
         "@typescript-eslint/indent": "off",
@@ -84,12 +84,6 @@ module.exports = {
         "@typescript-eslint/no-shadow": ["error"],
         "quotes": ["error", "single"],
         "@typescript-eslint/explicit-module-boundary-types": "off",
-        "object-curly-newline": ["error", {
-          "ObjectExpression": "always",
-          "ObjectPattern": { "multiline": true },
-          "ImportDeclaration": "never",
-          "ExportDeclaration": { "multiline": true, "minProperties": 3 }
-        }],
         "no-redeclare": "off",
         "@typescript-eslint/no-redeclare": ["error"],
         eqeqeq: "error", // e.g. === instead of == when applicable
