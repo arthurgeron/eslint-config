@@ -106,10 +106,14 @@ module.exports = {
       },
     },
     {
+      files: ['**/*.test.js'],
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+    },
+    {
       files: ["fonts.ts"],
       rules: {
         "prettier/prettier": "off",
-      }
-    }
+      },
+    },
   ],
 };
