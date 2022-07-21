@@ -18,7 +18,12 @@ module.exports = [
     leadingUnderscore: 'allow',
     trailingUnderscore: 'forbid',
   },
-
+  {
+    selector: 'enumMember',
+    format: ['PascalCase', 'UPPER_CASE'],
+    leadingUnderscore: 'forbid',
+    trailingUnderscore: 'forbid',
+  },
   {
     selector: 'variable',
     format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
