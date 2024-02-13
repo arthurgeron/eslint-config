@@ -2,5 +2,5 @@ const baseConfig = require('../index');
 
 module.exports = {
   ...baseConfig,
-  extends: [...baseConfig.extends, "@react-native-community"],
+  extends: ['@react-native', ...baseConfig.extends.filter((item) => !item.startsWith('next'))],
 }
