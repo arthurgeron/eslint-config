@@ -1,6 +1,6 @@
 {
   "name": "@arthurgeron/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "peerDependencies": {
     "eslint": ">= 8.32.x",
-    "eslint-plugin-testing-library": ">= 5.9.x",
+    "eslint-plugin-testing-library": ">= 6.2.x",
     "react": ">= 18.x",
     "@typescript-eslint/eslint-plugin": ">=4.x",
     "@typescript-eslint/parser": ">=4.x",
@@ -29,14 +29,14 @@
     "eslint-plugin-radar": "0.x",
     "eslint-plugin-react": "7.31.X",
     "eslint-plugin-react-hooks": "4.x",
-    "@arthurgeron/eslint-plugin-react-usememo": ">= 1.1.x",
     "eslint-plugin-unicorn": ">= 45.0.x",
     "@babel/eslint-parser": ">= 7.19.x",
     "prettier": ">= 2.8.x",
     "eslint-config-prettier": ">=8.8.0",
-    "eslint-plugin-jest": ">=27.2.x",
+    "eslint-plugin-jest": ">= 26.x.x",
     "react-native": ">= 0.72.2",
     "@react-native/eslint-config": ">= 0.72.2",
+    "@arthurgeron/eslint-plugin-react-usememo": ">= 1.x.x",
     "eslint-config-next": ">= 14.1.0"
   }
 }
