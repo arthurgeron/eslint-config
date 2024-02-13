@@ -5,16 +5,28 @@ module.exports = [
     format: ['camelCase'],
     leadingUnderscore: 'allow',
     trailingUnderscore: 'forbid',
+    filter: {
+      regex: "^(__esModule)",
+      match: false
+    },
   },
   {
     selector: 'typeProperty',
     format: ['camelCase', 'snake_case', 'PascalCase', 'UPPER_CASE'],
+    filter: {
+      regex: "^(__esModule)",
+      match: false
+    },
     leadingUnderscore: 'forbid',
     trailingUnderscore: 'forbid',
   },
   {
     selector: 'objectLiteralProperty',
     format: ['camelCase', 'snake_case', 'PascalCase', 'UPPER_CASE'],
+    filter: {
+      regex: "^(__esModule)",
+      match: false
+    },
     leadingUnderscore: 'allow',
     trailingUnderscore: 'forbid',
   },
@@ -37,5 +49,14 @@ module.exports = [
   {
     selector: 'function',
     format: ['camelCase', 'PascalCase'],
+  },
+  {
+    selector: 'parameter',
+    format: ['camelCase', 'PascalCase'],
+    "filter": {
+      "regex": "^[A-Z]*$",
+      "match": false
+    },
+    leadingUnderscore: 'allow',
   },
 ];
