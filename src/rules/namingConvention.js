@@ -43,6 +43,12 @@ module.exports = [
     trailingUnderscore: 'forbid',
   },
   {
+    selector: 'import',
+    format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+    leadingUnderscore: 'allow',
+    trailingUnderscore: 'forbid',
+  },
+  {
     selector: 'typeLike',
     format: ['PascalCase'],
   },
